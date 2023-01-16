@@ -1,23 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
+import Navbar from './Components/navbar';
+import Calender from './Components/calender';
+import Timer from './Components/timer';
+import Projects from './Components/projects';
+import Tasks from './Components/tasks';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import ThemeContextProvider from './Context/context';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App container-fluid p-0">
+      <ThemeContextProvider>
+        <BrowserRouter>
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<Timer />} />
+            <Route path="/calender" element={<Calender />} />
+            <Route path="/overview/projects" element={<Projects />} />
+            <Route path="/overview/tasks" element={<Tasks />} />
+          </Routes>
+        </BrowserRouter>
+      </ThemeContextProvider>
     </div>
   );
 }

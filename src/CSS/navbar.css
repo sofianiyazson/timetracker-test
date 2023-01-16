@@ -1,0 +1,22 @@
+body {
+    overflow-x: hidden;
+}
+
+.fixed-bottom {
+    background-color: #ddd;
+    margin-top: 5%;
+}
+
+.fixed-bottom a i {
+    text-align: center;
+    font-size: 30px;
+    padding: 8px 12px;
+    color: black;
+}
+
+.fixed-bottom a i:hover,
+nav a i:active,
+.active {
+    background-color: white;
+    border-radius: 5px;
+}

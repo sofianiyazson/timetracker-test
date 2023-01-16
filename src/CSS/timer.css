@@ -1,0 +1,35 @@
+body {
+    overflow-x: hidden;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    background: #ddd
+}
+
+.handleTimer {
+    vertical-align: middle;
+    float: right;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.tasksList {
+    margin: 3% 0 8%;
+}
+
+@media screen and (max-width: 480px) {
+    .tasksList { margin: 3% 0 18% }
+    .handleTimer { margin: -25% 4% 0 0 }
+}
+
+@media screen and (max-width: 1000px) {
+    .tasksList { margin: 3% 0 18% }
+    .handleTimer { margin: -8% 3% 0 0 }
+}
+
+@media screen and (min-width: 1000px) {
+    .tasksList { margin: 3% 0 8% }
+    .handleTimer { margin: -5% 1% 0 0 }
+}

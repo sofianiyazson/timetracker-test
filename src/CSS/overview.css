@@ -1,0 +1,80 @@
+body {
+    overflow-x: hidden;
+}
+
+.overviewNavbar {
+    background-color: #ddd;
+    padding: 0;
+}
+
+#projectLink,
+#taskLink {
+    padding: 1% 22%;
+}
+
+.k:hover,
+.activeA {
+    background-color: grey;
+}
+
+.overviewNavbar a h2 {
+    text-align: center;
+    font-size: 30px;
+    color: black;
+}
+
+.btn-block {
+    width: 80%;
+    margin: 2% 0% 6%;
+}
+
+.dots {
+    cursor: pointer;
+}
+
+.options {
+    display: none;
+    border: 1px solid grey;
+    border-radius: 5px;
+    float: right;
+    margin: -3.3% 2% 0 0;
+    background-color: #eee;
+}
+
+.btn-light {
+    margin: 5px;
+    width: 100px;
+}
+
+.btn-light:hover {
+    background-color: #bbb;
+    color: white;
+}
+
+.del,
+.del:hover {
+    color: red
+}
+
+@media screen and (max-width: 480px) {
+    .k { padding: 0 }
+    .btn-lg { margin: 2% 2% 20% 0 }
+    .options { margin: -12% 2% 0 0 }
+    .dots { margin: -5% 4% 0 0 }
+}
+
+@media screen and (max-width: 720px) {
+    .btn-lg { margin: 2% 2% 20% 0 }
+    .options { margin: -6% 2% 0 0 }
+    .dots { margin: -4% 4% 0 0 }
+}
+
+@media screen and (max-width: 1000px) {
+    .btn-lg { margin: 2% 2% 20% 0 }
+}
+
+@media screen and (min-width: 1000px) {
+    .btn-lg { margin: 2% 2% 8% 0 }
+    .options { margin: -5% 2% 0 0 }
+    .dots { margin: -3% 3% 0 0 }
+}
